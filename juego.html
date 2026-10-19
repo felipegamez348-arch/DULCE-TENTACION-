@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/papas_game.css">
     <link rel="stylesheet" href="assets/css/game-graphics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root { color-scheme: dark; }
         * { box-sizing: border-box; }
@@ -21,7 +22,20 @@
         .game-topbar h1 { margin: 0; color: #f0b429; font: 700 clamp(1.2rem, 3vw, 2rem) Cinzel, serif; }
         .game-back { color: #f5d6a0; text-decoration: none; font-size: .85rem; font-weight: 700; }
         .game-back:hover { color: #fff; }
+        .game-footer { margin: 24px auto 0; padding: 32px 20px 0; border-top: 1px solid rgba(255,255,255,.12); background: #050505; color: #faf6f0; }
+        .game-footer-grid { display: grid; grid-template-columns: 1.2fr 1.4fr .9fr; gap: 36px; max-width: 1240px; margin: 0 auto; padding-bottom: 28px; }
+        .game-footer h2, .game-footer h3 { margin: 0 0 16px; color: #f5d6a0; font-family: Cinzel, serif; }
+        .game-footer h2 { font-size: 2rem; }
+        .game-footer h3 { font-size: 1.2rem; }
+        .game-footer p, .game-footer-contact { margin: 0; color: rgba(250,246,240,.85); font-size: .9rem; line-height: 1.6; }
+        .game-footer-socials { display: flex; gap: 14px; margin-top: 16px; }
+        .game-footer-socials a { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid rgba(250,246,240,.5); border-radius: 50%; color: #f5d6a0; text-decoration: none; }
+        .game-footer-contact { display: grid; gap: 10px; }
+        .game-footer-contact span { display: flex; gap: 10px; }
+        .game-footer-contact i { min-width: 16px; padding-top: 4px; color: #f5d6a0; }
+        .game-footer-bottom { padding: 14px 0 18px; border-top: 1px solid rgba(255,255,255,.08); text-align: center; color: rgba(250,246,240,.6); font-size: .78rem; }
         .pb-result-overlay[hidden] { display: none; }
+        @media (max-width: 700px) { .game-footer-grid { grid-template-columns: 1fr; gap: 24px; } }
         @media (max-width: 600px) { body { padding: 8px; } .game-topbar { align-items: flex-start; flex-direction: column; gap: 5px; } }
     </style>
 </head>
@@ -137,6 +151,33 @@
             <div id="pb-result-overlay" class="pb-result-overlay" hidden><div class="pb-result-card"><strong id="pb-result-grade" class="pb-result-grade">A+</strong><span id="pb-result-label" class="pb-result-label">¡Perfecto!</span><span id="pb-result-stars" class="pb-result-stars">⭐⭐⭐</span><span id="pb-result-score" class="pb-result-score">+0 pts</span><button id="pb-next-order-btn" class="pb-action-btn big" type="button">Siguiente pedido</button></div></div>
         </section>
     </main>
+    <footer class="game-footer">
+        <div class="game-footer-grid">
+            <div>
+                <h2>Dulce Tentación</h2>
+                <p>La mejor experiencia culinaria en Tocaima, Cundinamarca.</p>
+                <div class="game-footer-socials">
+                    <a href="https://www.facebook.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573105731569" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <div class="game-footer-contact">
+                    <span><i class="fas fa-location-dot"></i>Urbanización San Jacinto, Diagonal 2B #5-45, Tocaima, Cundinamarca, Colombia</span>
+                    <span><i class="fas fa-phone-alt"></i>+57 310 573 1569</span>
+                    <span><i class="fas fa-clock"></i>Horario de atención: Lunes a Domingo de 6:00 am a 9:00 pm</span>
+                </div>
+            </div>
+            <div>
+                <h3>Horarios</h3>
+                <p>Lunes - Sábado: 3:30 PM - 11:00 PM</p>
+                <p>Domingo: 4:00 PM - 11:30 PM</p>
+            </div>
+        </div>
+        <div class="game-footer-bottom">&copy; 2026 Dulce Tentación. Todos los derechos reservados.</div>
+    </footer>
     <script src="assets/js/papas_game.js"></script>
 </body>
 </html>
