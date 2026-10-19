@@ -1,6 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8KT3TZK3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K8KT3TZK3Q');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo de Trabajo | Dulce Artesanal</title>
@@ -97,7 +106,7 @@
         .floating-cart {
             position: fixed;
             bottom: 100px;
-            right: 72px;
+            right: 18px;
             width: 56px;
             height: 56px;
             background: linear-gradient(135deg, #c9a96e, #e8a050);
@@ -190,6 +199,7 @@
                 </li>
                 <li><a href="equipo.html" class="nav-link" style="color: var(--gold);">Sobre Nosotros</a></li>
                 <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="admin.html" class="nav-link admin-nav-item" title="Panel de Administración"><i class="fas fa-user-shield"></i> Admin</a></li>
             </ul>
         </div>
     </nav>
@@ -363,24 +373,34 @@
 
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-logo">DULCE</span>
-                    <p>Panadería & Pastelería Artesanal de Autor</p>
+    <footer class="footer footer-extended">
+        <div class="container footer-grid">
+            <div class="footer-brand-block">
+                <h3 class="footer-title">Dulce Tentación</h3>
+                <p>La mejor experiencia culinaria en Tocaima, Cundinamarca.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573105731569" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html#inicio">Inicio</a>
-                    <a href="index.html#productos">Productos</a>
-                    <a href="equipo.html">Equipo</a>
-                    <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Urbanización San Jacinto, Diagonal 2B #5-45, Tocaima, Cundinamarca, Colombia</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+57 310 573 1569</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Horario de atención: Lunes a Domingo de 6:00 am a 9:00 pm</span></div>
                 </div>
-                <div class="footer-copy">
-                    <p>&copy; 2026 Dulce Artesanal. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Horarios</h3>
+                <div class="footer-hours">
+                    <p>Lunes - Sábado: 3:30 PM - 11:00 PM</p>
+                    <p>Domingo: 4:00 PM - 11:30 PM</p>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 Dulce Tentación. Todos los derechos reservados.</p></div></div>
     </footer>
 
     <!-- ==================== LIGHTBOX OVERLAY ==================== -->
@@ -414,6 +434,7 @@
             <button type="button" class="checkout-btn" onclick="pagar()" disabled><i class="fab fa-whatsapp"></i> Pedir por WhatsApp</button>
         </div>
     </aside>
+    <script src="assets/js/products.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/cart.js"></script>
     <script>
