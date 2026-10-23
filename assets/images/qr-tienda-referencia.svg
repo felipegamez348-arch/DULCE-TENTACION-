@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="720" viewBox="0 0 500 720" style="display:block;margin-inline:auto" role="img" aria-labelledby="title description">
+  <title id="title">Dulce Tentación - escanea para visitar la tienda</title>
+  <desc id="description">Código QR de Dulce Tentación con su logotipo y los colores de la panadería.</desc>
+  <defs>
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#2C2018" flood-opacity=".12"/>
+    </filter>
+    <clipPath id="center-logo-clip">
+      <circle cx="250" cy="359" r="19"/>
+    </clipPath>
+    <clipPath id="brand-logo-clip">
+      <circle cx="250" cy="87" r="41"/>
+    </clipPath>
+  </defs>
+
+  <rect width="500" height="720" fill="#FAF6F0"/>
+  <rect x="25" y="22" width="450" height="676" rx="24" fill="#FFFFFF" stroke="#E7CC98" stroke-width="2" filter="url(#card-shadow)"/>
+
+  <rect x="25" y="22" width="450" height="174" rx="24" fill="#2C2018"/>
+  <rect x="25" y="166" width="450" height="30" fill="#2C2018"/>
+  <path d="M54 196h392" stroke="#D48C29" stroke-width="2"/>
+
+  <circle cx="250" cy="87" r="45" fill="#FAF6F0" stroke="#D48C29" stroke-width="2"/>
+  <image href="logo-tienda.jpg" xlink:href="logo-tienda.jpg" x="209" y="45" width="82" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#brand-logo-clip)"/>
+  <text x="250" y="158" text-anchor="middle" fill="#FAF6F0" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" letter-spacing="1.2">DULCE TENTACIÓN</text>
+  <text x="250" y="181" text-anchor="middle" fill="#E7CC98" font-family="Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="3">PANADERÍA ARTESANAL</text>
+
+  <g filter="url(#card-shadow)">
+    <rect x="111" y="220" width="278" height="278" rx="16" fill="#FFFFFF" stroke="#D48C29" stroke-width="2"/>
+    <image href="qr-tienda.png" xlink:href="qr-tienda.png" x="130" y="239" width="240" height="240" preserveAspectRatio="xMidYMid meet"/>
+    <circle cx="250" cy="359" r="23" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+    <image href="logo-tienda.jpg" xlink:href="logo-tienda.jpg" x="231" y="340" width="38" height="38" preserveAspectRatio="xMidYMid slice" clip-path="url(#center-logo-clip)"/>
+  </g>
+
+  <text x="250" y="548" text-anchor="middle" fill="#2C2018" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.3">ESCANEA PARA VISITAR LA TIENDA</text>
+  <path d="M150 570h200" stroke="#E7CC98" stroke-width="1.5"/>
+  <rect x="108" y="590" width="284" height="46" rx="23" fill="#2C2018"/>
+  <circle cx="139" cy="613" r="5" fill="#D48C29"/>
+  <text x="252" y="618" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">DULCE TENTACIÓN ONLINE</text>
+  <text x="250" y="670" text-anchor="middle" fill="#7E6E64" font-family="Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.8">TOCAIMA · HECHO CON TRADICIÓN</text>
+</svg>

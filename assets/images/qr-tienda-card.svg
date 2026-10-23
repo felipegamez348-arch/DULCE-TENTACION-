@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="580" viewBox="0 0 420 580" role="img" aria-labelledby="title description">
+  <title id="title">Código QR de Dulce Tentación</title>
+  <desc id="description">Escanea el código para visitar la tienda de Dulce Tentación.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#4b2b18" flood-opacity=".16"/>
+    </filter>
+  </defs>
+
+  <rect width="420" height="580" fill="#fffdfb"/>
+
+  <g fill="none" stroke="#50331f" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(14 200 112)" stroke-width="9">
+      <rect x="68" y="45" width="238" height="132" rx="13"/>
+      <path d="M77 78h220"/>
+      <rect x="90" y="99" width="41" height="31" rx="5" stroke-width="6"/>
+      <path d="M91 149h35" stroke-width="7"/>
+      <path d="M257 143h27" stroke-width="7"/>
+    </g>
+    <g transform="rotate(-1 166 131)" stroke-width="9">
+      <rect x="49" y="74" width="236" height="130" rx="13" fill="#fffdfb"/>
+      <circle cx="91" cy="111" r="12" fill="#fffdfb"/>
+      <circle cx="119" cy="111" r="12" fill="#fffdfb"/>
+      <path d="M79 158h22m21 0h20" stroke-width="7"/>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="126" y="181" width="218" height="218" rx="10" fill="#87552f"/>
+    <rect x="139" y="194" width="192" height="192" rx="3" fill="#fff"/>
+    <image href="qr-tienda.png" xlink:href="qr-tienda.png" x="151" y="206" width="168" height="168" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <text x="210" y="474" text-anchor="middle" fill="#c66b16" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="1.1">DULCE TENTACIÓN</text>
+  <path d="M126 493h168" stroke="#e5c9a9" stroke-width="1.5"/>
+  <text x="210" y="520" text-anchor="middle" fill="#79543a" font-family="Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.2">PANADERÍA ARTESANAL</text>
+</svg>
